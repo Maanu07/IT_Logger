@@ -1,0 +1,41 @@
+{
+  "logs": [
+    {
+      "id": 5,
+      "message": "SQL server installation FCI acitve/pasive",
+      "attention": true,
+      "tech": "Chaa Yong"
+    },
+    {
+      "message": "Standalone installaton",
+      "attention": false,
+      "tech": "Vincenzo Cassano",
+      "date": "2022-08-10T06:17:45.281Z",
+      "id": 6
+    },
+    {
+      "message": "release of our IT logger application",
+      "attention": true,
+      "tech": "Will Smith",
+      "date": "2022-08-11T06:06:07.071Z",
+      "id": 7
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Bucky",
+      "lastName": "Louis"
+    },
+    {
+      "id": 2,
+      "firstName": "Smith",
+      "lastName": "Jones"
+    },
+    {
+      "firstName": "Joseph",
+      "lastName": "Kell",
+      "id": 6
+    }
+  ]
+}
