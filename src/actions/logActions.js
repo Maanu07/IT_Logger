@@ -30,6 +30,7 @@ export function getLogs() {
 }
 
 // async action creator (uses thunk middleware)
+// adds a new log to the server
 export function addLog(log) {
   return async (dispatch) => {
     try {
@@ -56,6 +57,7 @@ export function addLog(log) {
   };
 }
 
+// deleted the selected log from the server
 export function deleteLog(id) {
   return async (dispatch) => {
     try {
@@ -76,6 +78,7 @@ export function deleteLog(id) {
   };
 }
 
+// update the selected log from the server
 export const updateLog = (log) => {
   return async (dispatch) => {
     try {
@@ -100,6 +103,7 @@ export const updateLog = (log) => {
   };
 };
 
+// search for a particular log
 export function searchLogs(text) {
   return async (dispatch) => {
     try {
@@ -119,6 +123,7 @@ export function searchLogs(text) {
   };
 }
 
+// sets the current selected log
 export function setCurrent(log) {
   return {
     type: SET_CURRENT,
@@ -132,4 +137,5 @@ function setLoader() {
     type: SET_LOADING,
   };
 }
+
 // action creator returns action object

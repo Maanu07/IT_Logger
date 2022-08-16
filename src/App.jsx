@@ -18,6 +18,9 @@ const App = () => {
     M.AutoInit();
   }, []);
 
+  // Provider is used to provide the "redux store" to all the childs of the app component
+  // we pass store as a prop to the Provider
+  // we can access the store in our component using the react-redux library
   return (
     <Provider store={store}>
       <SearchBar />

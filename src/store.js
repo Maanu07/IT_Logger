@@ -5,11 +5,13 @@ import rootReducer from "./reducers/index";
 
 const middleware = [thunk];
 
+// creating the redux store to manage the state
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(...middleware))
 );
 
+// subscribing to the store for identifing the state change of our application
 /* const unsubscribe = store.subscribe(() => {
   console.log("Updated state : ", store.getState());
 }); */

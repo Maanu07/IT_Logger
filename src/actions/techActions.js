@@ -7,6 +7,7 @@ import {
 } from "./types";
 
 // add technician to the server
+// it is a async action creator which returns a function instead of an action object, this is due to the middleware called thunk
 export const addTech = (tech) => {
   return async (dispatch) => {
     try {

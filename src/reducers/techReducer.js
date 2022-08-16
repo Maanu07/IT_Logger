@@ -12,7 +12,8 @@ const initialState = {
   error: null,
 };
 
-export const techReducer = (state = initialState, action) => {
+// reducer for our technician feature
+const techReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TECH:
       return {
@@ -39,6 +40,7 @@ export const techReducer = (state = initialState, action) => {
         ...state,
         error: action.payload,
       };
+
     case SET_LOADING:
       return {
         ...state,
@@ -48,3 +50,5 @@ export const techReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export default techReducer;
