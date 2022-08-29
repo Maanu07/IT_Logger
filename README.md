@@ -1,5 +1,5 @@
 # IT_Logger
-An IT Logger web application to simply display the system logs.
+An IT Logger web application to simply display the system logs using json-server as a BAAS and react with redux for UI.
 
 ## How to run the project on your local machine?
 1. download the zip folder
